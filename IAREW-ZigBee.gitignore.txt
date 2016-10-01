@@ -1,0 +1,47 @@
+## **代表任意多层上级文件夹
+
+## 参考：http://shashanzhao.com/archives/828.html
+
+# IAR应该上传的文件是:
+
+################################################################################
+
+## IAR EW IDE产生的文件
+
+# 解决方案/工作空间/workspace,可以直接双击打开,可以放多个工程文件
+# eww文件
+
+# 工程文件/project,包含代码,编译,链接选项等,不包含调试设置等信息
+# ewp文件
+
+# 工程调试设置,保存上面一张图中的Debugger选项Options:
+# General Options, C/C++ Compiler, Assembler, Output Converter, Custom Build, Build Actions, Linker
+# 这个可以不上传,因为每个人使用的调试设备可能不一样.
+# 但是如果有人不懂如何设置调试那么就应该上传,省的老有人问如何调试.
+# ewd文件
+
+## 其他都是临时文件，可以ignore
+
+# IDE所使用的文件依赖信息
+*.dep
+
+# 保存了当前窗口布局,打开的文件等等设置
+**/settings/
+
+# debug工程生成的临时和目标文件等
+**/Debug/
+
+# Release工程生成的临时和目标文件等
+**/Release/
+
+################################################################################
+
+## 操作系统生成的文件
+
+# Windows
+Thumbs.db
+
+# macOS
+.DS_Store
+
+
