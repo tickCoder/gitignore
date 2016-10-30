@@ -1,2 +1,2 @@
 # gitignore
-.gigignore模板
+.gitignore模板
